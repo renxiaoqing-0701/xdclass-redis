@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="41577b0b-728c-4c9e-9db8-0b1b3bdbabc7" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\systemPackage\devlopTools\apache-maven-3.9.16-bin\apache-maven-3.9.16\repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.9.16-bin/apache-maven-3.9.16" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="D:\systemPackage\devlopTools\apache-maven-3.9.16-bin\apache-maven-3.9.16\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="3Hqz16lGPm0j77Jj3BlPtljfP7E" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "D:/systemPackage/studyProject/xdclass-redis",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "spring.configuration.checksum": "6f03aec46871bb09051565900ed95d65",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\systemPackage\devlopTools\jdk1.8\xdclass-redis" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.XdclassRedisApplication">
+    <configuration name="XdclassRedisApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xdclass-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.xdclassredis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.xdclassredis.test" />
+      <option name="MAIN_CLASS_NAME" value="org.xdclassredis.test.XdclassRedisApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XdclassRedisApplicationTests.testStringGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xdclass-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.xdclassredis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.xdclassredis.test" />
+      <option name="MAIN_CLASS_NAME" value="org.xdclassredis.test.XdclassRedisApplicationTests" />
+      <option name="METHOD_NAME" value="testStringGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XdclassRedisApplicationTests.testStringSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xdclass-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.xdclassredis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.xdclassredis.test" />
+      <option name="MAIN_CLASS_NAME" value="org.xdclassredis.test.XdclassRedisApplicationTests" />
+      <option name="METHOD_NAME" value="testStringSet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XdclassRedisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="xdclass-redis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.xdclassredis.XdclassRedisApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.XdclassRedisApplicationTests" />
+        <item itemvalue="JUnit.XdclassRedisApplicationTests.testStringSet" />
+        <item itemvalue="JUnit.XdclassRedisApplicationTests.testStringGet" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41577b0b-728c-4c9e-9db8-0b1b3bdbabc7" name="Changes" comment="" />
+      <created>1786610169557</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1786610169557</updated>
+      <workItem from="1786610171274" duration="1138000" />
+      <workItem from="1786611324187" duration="3291000" />
+      <workItem from="1786620944093" duration="1265000" />
+      <workItem from="1786672484358" duration="123000" />
+      <workItem from="1786672618086" duration="15445000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/xdclassredis/test/XdclassRedisApplicationTests.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.springframework.data.redis.core.RedisTemplate" memberName="connectionFactory" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+</project>
