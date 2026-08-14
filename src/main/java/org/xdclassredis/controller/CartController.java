@@ -29,7 +29,7 @@ public class CartController {
     @RequestMapping("add")
     public JsonData addCart(@RequestParam(value = "videoId",required = true ) Long videoId,
                             @RequestParam(value = "buyNum",required = true ) Integer buyNum){
-    //获取购物车
+        //获取购物车
         BoundHashOperations<String, Object, Object> myCart = getMyCartOps();
         Object cacheObj = myCart.get(videoId+"");
         String result = "";
