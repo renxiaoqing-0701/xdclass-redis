@@ -1,0 +1,12 @@
+package org.xdclassredis;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class XdclassRedisApplication {
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+        SpringApplication.run(XdclassRedisApplication.class, args);
+    }
+}

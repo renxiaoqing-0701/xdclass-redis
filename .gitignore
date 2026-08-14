@@ -1,0 +1,18 @@
+# IDEA 配置文件
+.idea/
+*.iml
+*.iws
+*.ipr
+.DS_Store
+
+# 编译输出目录
+target/
+out/
+*.class
+
+# 日志文件
+*.log
+
+# 本地环境配置（如果你有）
+application-local.yml
+application-dev.yml
