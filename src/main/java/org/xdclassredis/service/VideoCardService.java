@@ -1,6 +1,6 @@
 package org.xdclassredis.service;
 
-import org.xdclassredis.model.VideoCardDo;
+import org.xdclassredis.model.VideoCardDO;
 
 import java.util.List;
 
@@ -11,5 +11,5 @@ import java.util.List;
  * @Version 1.0
  **/
 public interface VideoCardService {
-    List<VideoCardDo> listVideoCard();
+    List<VideoCardDO> listVideoCard();
 }

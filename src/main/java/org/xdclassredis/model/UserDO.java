@@ -7,17 +7,17 @@ import java.io.Serializable;
 
 @Getter
 @Setter
-public class UserDo implements Serializable {
+public class UserDO implements Serializable {
     private Long id;
     private String name;
     private String sex;
 
-    public UserDo(Long id, String name, String sex) {
+    public UserDO(Long id, String name, String sex) {
         this.id = id;
         this.name = name;
         this.sex = sex;
     }
 
-    public UserDo() {
+    public UserDO() {
     }
 }

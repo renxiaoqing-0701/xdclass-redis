@@ -14,16 +14,16 @@ import java.util.List;
  **/
 @Getter
 @Setter
-public class VideoCardDo implements Serializable {
+public class VideoCardDO implements Serializable {
     private Long id;
     private String title;
     private Integer weight;
-    private List<VideoDo> videoList;
+    private List<VideoDO> videoList;
 
-    public VideoCardDo() {
+    public VideoCardDO() {
     }
 
-    public VideoCardDo(Long id, String title, Integer weight, List<VideoDo> videoList) {
+    public VideoCardDO(Long id, String title, Integer weight, List<VideoDO> videoList) {
         this.id = id;
         this.title = title;
         this.weight = weight;

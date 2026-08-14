@@ -6,7 +6,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.xdclassredis.model.VideoCardDo;
+import org.xdclassredis.model.VideoCardDO;
 import org.xdclassredis.service.VideoCardService;
 import org.xdclassredis.util.JsonData;
 
@@ -38,11 +38,11 @@ public class VideoCardController {
     public JsonData listVideoCardCache(){
         Object cacheObj = redisTemplate.opsForValue().get(VIDEO_CARD_CACHE_KEY);
         if (cacheObj != null){
-            List<VideoCardDo> videoCards = (List<VideoCardDo>) cacheObj;
+            List<VideoCardDO> videoCards = (List<VideoCardDO>) cacheObj;
            return JsonData.buildSuccess(videoCards);
         }else {
             log.info("缓存中无数据");
-            List<VideoCardDo> videoCards = videoCardService.listVideoCard();
+            List<VideoCardDO> videoCards = videoCardService.listVideoCard();
             redisTemplate.opsForValue().set(VIDEO_CARD_CACHE_KEY,videoCards,10, TimeUnit.MINUTES);
             return JsonData.buildSuccess(videoCards);
         }
@@ -51,7 +51,7 @@ public class VideoCardController {
 
     @GetMapping("list_nocache")
     public JsonData listVideoCardNoCache(){
-        List<VideoCardDo> videoCards = videoCardService.listVideoCard();
+        List<VideoCardDO> videoCards = videoCardService.listVideoCard();
         return JsonData.buildSuccess(videoCards);
     }
 

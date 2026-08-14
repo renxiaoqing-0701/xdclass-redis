@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41577b0b-728c-4c9e-9db8-0b1b3bdbabc7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/controller/RankController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/controller/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/dao/VideoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/model/vo/CartItemVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/model/vo/CartVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/util/JsonUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/xdclassredis/controller/RankController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/controller/RankController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/xdclassredis/controller/VideoCardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/controller/VideoCardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/xdclassredis/dao/VideoCardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/dao/VideoCardDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/xdclassredis/model/UserDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/model/UserDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/xdclassredis/model/VideoCardDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/model/VideoCardDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/xdclassredis/model/VideoDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/model/VideoDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/xdclassredis/service/VideoCardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/service/VideoCardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/xdclassredis/service/impl/VideoCardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/service/impl/VideoCardServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/xdclassredis/test/XdclassRedisApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/xdclassredis/test/XdclassRedisApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,6 +85,9 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\systemPackage\devlopTools\jdk1.8\xdclass-redis" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.xdclassredis.model.vo" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.XdclassRedisApplicationTests.replaceRank">
@@ -186,10 +201,22 @@
       <workItem from="1786672484358" duration="123000" />
       <workItem from="1786672618086" duration="15445000" />
     </task>
+    <task id="LOCAL-00001" summary="List热销实战">
+      <created>1786701347294</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1786701347294</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="List热销实战" />
+    <option name="LAST_COMMIT_MESSAGE" value="List热销实战" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

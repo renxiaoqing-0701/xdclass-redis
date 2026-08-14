@@ -5,7 +5,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.xdclassredis.model.VideoDo;
+import org.xdclassredis.model.VideoDO;
 import org.xdclassredis.util.JsonData;
 
 import java.util.List;
@@ -24,7 +24,7 @@ public class RankController {
     @GetMapping("daily_rank")
     public JsonData videoRank(){
         String DAILY_RANK_KEY = "video:rank:daily";
-        List<VideoDo> list = redisTemplate.opsForList().range(DAILY_RANK_KEY,0,-1);
+        List<VideoDO> list = redisTemplate.opsForList().range(DAILY_RANK_KEY,0,-1);
         return JsonData.buildSuccess(list);
     }
 }

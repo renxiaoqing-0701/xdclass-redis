@@ -3,7 +3,7 @@ package org.xdclassredis.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.xdclassredis.dao.VideoCardDao;
-import org.xdclassredis.model.VideoCardDo;
+import org.xdclassredis.model.VideoCardDO;
 import org.xdclassredis.service.VideoCardService;
 
 import java.util.List;
@@ -19,7 +19,7 @@ public class VideoCardServiceImpl implements VideoCardService {
     @Autowired
     private VideoCardDao videoCardDao;
 
-    public List<VideoCardDo> listVideoCard() {
+    public List<VideoCardDO> listVideoCard() {
         return videoCardDao.listVideoCard();
     }
 }

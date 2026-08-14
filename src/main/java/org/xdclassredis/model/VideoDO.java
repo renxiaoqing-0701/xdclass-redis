@@ -14,16 +14,16 @@ import java.math.BigDecimal;
  **/
 @Getter
 @Setter
-public class VideoDo implements Serializable {
+public class VideoDO implements Serializable {
     private Long id;
     private String title;
     private String img;
     private BigDecimal price;
 
-    public VideoDo() {
+    public VideoDO() {
     }
 
-    public VideoDo(Long id, String title, String img, BigDecimal price) {
+    public VideoDO(Long id, String title, String img, BigDecimal price) {
         this.id = id;
         this.title = title;
         this.img = img;
