@@ -65,6 +65,23 @@
             <artifactId>fastjson</artifactId>
             <version>2.0.43</version>  <!-- 注意用最新版 -->
         </dependency>
+        <!-- 引入springcache-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
+        </dependency>
+        <!--mybatis plus和springboot整合-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.4.0</version>
+        </dependency>
+        <!--数据库驱动-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.15</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -87,5 +104,17 @@
             </snapshots>
         </repository>
     </repositories>
+
+    <!-- 这里是 Maven 插件专用的仓库配置 -->
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 
 </project>
