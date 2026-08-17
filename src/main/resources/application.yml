@@ -2,12 +2,21 @@ server:
   port: 8080
 spring:
   redis:
-    host: 8.163.20.123
-    port: 6379
-    password: 25802580Rxq
+#    host: 8.163.20.123
+#    port: 6379
+    password: 123456
     #指定客户端
     client-type: lettuce
-
+    cluster:
+        #命名的最多转发次数
+        max-redirects: 3
+        nodes:
+          - 8.163.20.123:6381
+          - 8.163.20.123:6382
+          - 8.163.20.123:6383
+          - 8.163.20.123:6384
+          - 8.163.20.123:6385
+          - 8.163.20.123:6386
     lettuce:
       pool:
         # 连接池最大连接数（使用负值表示没有限制）
@@ -18,16 +27,16 @@ spring:
         min-idle: 0
         # 连接池最大阻塞等待时间（使用负值表示没有限制）
         max-wait: -1ms
-    jedis:
-      pool:
-        # 连接池最大连接数（使用负值表示没有限制）
-        max-active: 10
-        # 连接池中的最大空闲连接
-        max-idle: 10
-        # 连接池中的最小空闲连接
-        min-idle: 0
-        # 连接池最大阻塞等待时间（使用负值表示没有限制）
-        max-wait: -1ms
+#      jedis:
+#        pool:
+#          # 连接池最大连接数（使用负值表示没有限制）
+#          max-active: 10
+#          # 连接池中的最大空闲连接
+#          max-idle: 10
+#          # 连接池中的最小空闲连接
+#          min-idle: 0
+#          # 连接池最大阻塞等待时间（使用负值表示没有限制）
+#          max-wait: -1ms
   cache:
     #指定缓存类型
     type: redis
@@ -47,10 +56,6 @@ spring:
     url: jdbc:mysql://8.163.20.123:3306/xdclass_redis?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
     username: peach
     password: Aa@284848
-  cluster:
-    #命名的最多转发次数
-    max-redirects: 3
-    nodes: 8.163.20.123:6381,8.163.20.123:6382,8.163.20.123:6383,8.163.20.123:6384,8.163.20.123:6385,8.163.20.123:6386
 #配置plus打印sql日志
 mybatis-plus:
   configuration:
