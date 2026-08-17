@@ -5,20 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41577b0b-728c-4c9e-9db8-0b1b3bdbabc7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/controller/CartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/dao/VideoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/model/vo/CartItemVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/model/vo/CartVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/util/JsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/mapper/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/model/ProductDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/model/vo/UserPointVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/service/impl/ProductServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/xdclassredis/XdclassRedisApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/XdclassRedisApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/xdclassredis/config/RedisTemplateConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/config/AppConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/xdclassredis/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/controller/CartController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/xdclassredis/controller/RankController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/controller/RankController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/xdclassredis/controller/VideoCardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/controller/VideoCardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/xdclassredis/dao/VideoCardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/dao/VideoCardDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/xdclassredis/model/UserDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/model/UserDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/xdclassredis/model/VideoCardDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/model/VideoCardDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/xdclassredis/model/VideoDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/model/VideoDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/xdclassredis/service/VideoCardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/service/VideoCardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/xdclassredis/service/impl/VideoCardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/service/impl/VideoCardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/xdclassredis/dao/VideoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/xdclassredis/dao/VideoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/xdclassredis/test/XdclassRedisApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/xdclassredis/test/XdclassRedisApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +30,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -43,10 +44,10 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\systemPackage\devlopTools\apache-maven-3.9.16-bin\apache-maven-3.9.16\repository" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.9.16-bin/apache-maven-3.9.16" />
+        <option name="localRepository" value="E:\systempackage\tools\apache-maven-3.9.16-bin\apache-maven-3.9.16\repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../tools/apache-maven-3.9.16-bin/apache-maven-3.9.16" />
         <option name="useMavenConfig" value="true" />
-        <option name="userSettingsFile" value="D:\systemPackage\devlopTools\apache-maven-3.9.16-bin\apache-maven-3.9.16\conf\settings.xml" />
+        <option name="userSettingsFile" value="E:\systempackage\tools\apache-maven-3.9.16-bin\apache-maven-3.9.16\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -66,15 +67,15 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/systemPackage/studyProject/xdclass-redis&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/systempackage/project/xdclass-redis&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;6f03aec46871bb09051565900ed95d65&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -90,22 +91,7 @@
       <recent name="org.xdclassredis.model.vo" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.XdclassRedisApplicationTests.replaceRank">
-    <configuration name="XdclassRedisApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="xdclass-redis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.xdclassredis.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.xdclassredis.test" />
-      <option name="MAIN_CLASS_NAME" value="org.xdclassredis.test.XdclassRedisApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.XdclassRedisApplicationTests.testSet">
     <configuration name="XdclassRedisApplicationTests.replaceRank" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="xdclass-redis" />
       <extension name="coverage">
@@ -138,7 +124,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XdclassRedisApplicationTests.testStringGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="XdclassRedisApplicationTests.testData" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="xdclass-redis" />
       <extension name="coverage">
         <pattern>
@@ -148,13 +134,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.xdclassredis.test" />
       <option name="MAIN_CLASS_NAME" value="org.xdclassredis.test.XdclassRedisApplicationTests" />
-      <option name="METHOD_NAME" value="testStringGet" />
+      <option name="METHOD_NAME" value="testData" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XdclassRedisApplicationTests.testStringSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="XdclassRedisApplicationTests.testSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="xdclass-redis" />
       <extension name="coverage">
         <pattern>
@@ -164,7 +150,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.xdclassredis.test" />
       <option name="MAIN_CLASS_NAME" value="org.xdclassredis.test.XdclassRedisApplicationTests" />
-      <option name="METHOD_NAME" value="testStringSet" />
+      <option name="METHOD_NAME" value="testSet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XdclassRedisApplicationTests.userProfile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xdclass-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.xdclassredis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.xdclassredis.test" />
+      <option name="MAIN_CLASS_NAME" value="org.xdclassredis.test.XdclassRedisApplicationTests" />
+      <option name="METHOD_NAME" value="userProfile" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -179,11 +181,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.XdclassRedisApplicationTests.replaceRank" />
+        <item itemvalue="JUnit.XdclassRedisApplicationTests.testSet" />
         <item itemvalue="JUnit.XdclassRedisApplicationTests.saveRank" />
-        <item itemvalue="JUnit.XdclassRedisApplicationTests" />
-        <item itemvalue="JUnit.XdclassRedisApplicationTests.testStringSet" />
-        <item itemvalue="JUnit.XdclassRedisApplicationTests.testStringGet" />
+        <item itemvalue="JUnit.XdclassRedisApplicationTests.userProfile" />
+        <item itemvalue="JUnit.XdclassRedisApplicationTests.replaceRank" />
       </list>
     </recent_temporary>
   </component>
@@ -200,6 +201,8 @@
       <workItem from="1786620944093" duration="1265000" />
       <workItem from="1786672484358" duration="123000" />
       <workItem from="1786672618086" duration="15445000" />
+      <workItem from="1786791340529" duration="9168000" />
+      <workItem from="1786844735576" duration="9136000" />
     </task>
     <task id="LOCAL-00001" summary="List热销实战">
       <created>1786701347294</created>
@@ -223,8 +226,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/xdclassredis/test/XdclassRedisApplicationTests.java</url>
-          <line>24</line>
+          <line>25</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/xdclassredis/dao/VideoDao.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

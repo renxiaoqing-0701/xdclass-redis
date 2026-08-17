@@ -3,14 +3,20 @@ package org.xdclassredis.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.BoundHashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.util.ObjectUtils;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.xdclassredis.dao.VideoDao;
 import org.xdclassredis.model.VideoDO;
 import org.xdclassredis.model.vo.CartItemVO;
+import org.xdclassredis.model.vo.CartVO;
 import org.xdclassredis.util.JsonData;
 import org.xdclassredis.util.JsonUtil;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @Description 购物车接口
@@ -26,7 +32,7 @@ public class CartController {
     @Autowired
     private VideoDao videoDao;
 
-    @RequestMapping("add")
+    @GetMapping("add")
     public JsonData addCart(@RequestParam(value = "videoId",required = true ) Long videoId,
                             @RequestParam(value = "buyNum",required = true ) Integer buyNum){
         //获取购物车
@@ -41,6 +47,9 @@ public class CartController {
             CartItemVO cartItem = new CartItemVO();
             //从数据库查询详情，我们这边直接随机写个
             VideoDO videoDO = videoDao.findDetailById(videoId);
+            if (ObjectUtils.isEmpty(videoDO)){
+                return JsonData.buildError(String.format("VideoId【%s】不存在",videoId));
+            }
             videoDO.setId(videoId);
             cartItem.setPrice(videoDO.getPrice());
             cartItem.setBuyNum(buyNum);
@@ -54,7 +63,7 @@ public class CartController {
             cartItem.setBuyNum(cartItem.getBuyNum() + buyNum);
             myCart.put(videoId+"", JsonUtil.objectToJson(cartItem));
         }
-        return JsonData.buildSuccess();
+        return JsonData.buildSuccess("加入购物车成功");
     }
 
     private BoundHashOperations<String,Object,Object> getMyCartOps(){
@@ -66,5 +75,35 @@ public class CartController {
         Integer userId = 1882;
         String cartKey = String.format("video:cart:%s",userId);
         return cartKey;
+    }
+
+    /**
+     * 查看我的购物车
+     * @return
+     */
+    @GetMapping("/mycart")
+    public JsonData findMyCart(){
+        BoundHashOperations<String,Object,Object> myCart = getMyCartOps();
+        List<Object> itemList = myCart.values();
+        List<CartItemVO> cartItemVOList = new ArrayList<>();
+        for(Object item: itemList){
+            CartItemVO cartItemVO = JsonUtil.jsonToPojo((String)item,CartItemVO.class);
+            cartItemVOList.add(cartItemVO);
+        }
+        //封装成cartvo
+        CartVO cartVO = new CartVO();
+        cartVO.setCartItems(cartItemVOList);
+        return JsonData.buildSuccess(cartVO);
+    }
+
+    /**
+     * 清空我的购物车
+     * @return
+     */
+    @GetMapping("/clear")
+    public JsonData clear() {
+        String cartKey = getCartKey();
+        redisTemplate.delete(cartKey);
+        return JsonData.buildSuccess("购物车已清空");
     }
 }
