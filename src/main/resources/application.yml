@@ -47,6 +47,10 @@ spring:
     url: jdbc:mysql://8.163.20.123:3306/xdclass_redis?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
     username: peach
     password: Aa@284848
+  cluster:
+    #命名的最多转发次数
+    max-redirects: 3
+    nodes: 8.163.20.123:6381,8.163.20.123:6382,8.163.20.123:6383,8.163.20.123:6384,8.163.20.123:6385,8.163.20.123:6386
 #配置plus打印sql日志
 mybatis-plus:
   configuration:
